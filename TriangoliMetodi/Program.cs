@@ -12,7 +12,7 @@ namespace TriangoliMetodi
             double l3 = MetodiTriangoli.MisuraLato();
             double? perimetro = MetodiTriangoli.Perimetro(l1, l2, l3);
             string risultato = MetodiTriangoli.RiconosciTriangoli(l1, l2, l3);
-            Console.WriteLine($"IL TRIANGOLO E' {risultato};\nIL PERIMETRO E' {perimetro}.");
+            Console.WriteLine($"IL TRIANGOLO E' {risultato};\nIL PERIMETRO E' {perimetro}. ");
         }
     }
 }
