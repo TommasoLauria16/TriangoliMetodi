@@ -17,36 +17,25 @@ namespace LibreriaTriangoli
             {
                 if (l1 == l2 && l1 == l3)
                 {
-                    risultato = "EQUILATERO";
+                    risultato = "IL TRIANGOLO E' EQUILATERO";
                 }
                 else if (l1 != l2 && l2 != l3 && l3 != l1)
                 {
-                    risultato = "SCALENO";
+                    risultato = "IL TRIANGOLO E' SCALENO";
                 }
                 else
                 {
-                    risultato = "ISOSCELE";
+                    risultato = "IL TRIANGOLO E' ISOSCELE";
                 }
             }
             else
                 risultato = "le misure inserite non sono valide";
             return risultato;
         }
-        public static double? Perimetro(double a, double b, double c)
+        public static double Perimetro(double a, double b, double c)
         {
-            double? perimetro = null;
-            if (a > 0 && b > 0 && c > 0)
-            {
-                perimetro = a + b + c;
-            }
-            else
-            {
-                Console.WriteLine("le misure dei lati inseriti sono errate");
-    
-            }
-            return perimetro;
+            return a+b+c;
         }
     }
 }
 
- 

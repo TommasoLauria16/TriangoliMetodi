@@ -10,9 +10,13 @@ namespace TriangoliMetodi
             double l1 = MetodiTriangoli.MisuraLato();
             double l2 = MetodiTriangoli.MisuraLato();
             double l3 = MetodiTriangoli.MisuraLato();
-            double? perimetro = MetodiTriangoli.Perimetro(l1, l2, l3);
+            double perimetro = MetodiTriangoli.Perimetro(l1, l2, l3);
             string risultato = MetodiTriangoli.RiconosciTriangoli(l1, l2, l3);
-            Console.WriteLine($"IL TRIANGOLO E' {risultato};\nIL PERIMETRO E' {perimetro}. ");
+            if (l1 < 0 || l2 < 0 || l3 < 0)
+                Console.WriteLine("errore i dati inseriti non sono validi");
+            else
+                Console.WriteLine($"{risultato},il suo perimetro è {perimetro}");
+
         }
     }
 }
